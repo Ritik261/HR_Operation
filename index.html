@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR Operations & Use Cases</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <h2>Loading HR Operations</h2>
+            <p>Preparing your dashboard...</p>
+        </div>
+    </div>
+
+    <!-- Landing Page -->
+    <div id="landing-page" class="landing-page">
+        <div class="landing-container">
+            <div class="landing-header">
+                <div class="logo">
+                    <i class="fas fa-users-cog"></i>
+                    <h1>HR Operations</h1>
+                </div>
+                <div class="landing-content">
+                    <h2>Human Resources Management System</h2>
+                    <p class="landing-description">
+                        Comprehensive HR operations platform featuring complete modules and detailed use cases 
+                        for modern workforce management. Explore our integrated solutions designed to streamline 
+                        your human resources processes.
+                    </p>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <i class="fas fa-user-tie"></i>
+                            <h3>Employee Management</h3>
+                            <p>Complete employee lifecycle management</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-search"></i>
+                            <h3>Recruitment</h3>
+                            <p>Advanced hiring and onboarding processes</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-chart-line"></i>
+                            <h3>Performance</h3>
+                            <p>Goal setting and performance tracking</p>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-graduation-cap"></i>
+                            <h3>Training</h3>
+                            <p>Learning and development programs</p>
+                        </div>
+                    </div>
+                    <button id="explore-btn" class="explore-btn">
+                        <span>Explore Operations</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Dashboard -->
+    <div id="dashboard" class="dashboard hidden">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-left">
+                <button id="sidebar-toggle" class="sidebar-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="logo-header">
+                    <i class="fas fa-users-cog"></i>
+                    <span>HR Operations</span>
+                </div>
+            </div>
+            <div class="header-right">
+                <button id="back-to-landing" class="back-btn">
+                    <i class="fas fa-home"></i>
+                    <span>Back to Home</span>
+                </button>
+            </div>
+        </header>
+
+        <div class="dashboard-container">
+            <!-- Sidebar -->
+            <aside id="sidebar" class="sidebar">
+                <div class="sidebar-content">
+                    <h3 class="sidebar-title">HR Operations</h3>
+                    <nav class="sidebar-nav">
+                        <div class="nav-item" data-operation="job-automation">
+                            <i class="fas fa-robot"></i>
+                            <span>Job Description Automation</span>
+                        </div>
+                        <div class="nav-item" data-operation="recruitment">
+                            <i class="fas fa-search"></i>
+                            <span>Recruitment & Hiring</span>
+                        </div>
+                        <div class="nav-item" data-operation="employee-management">
+                            <i class="fas fa-user-tie"></i>
+                            <span>Employee Management</span>
+                        </div>
+                        <div class="nav-item" data-operation="benefits">
+                            <i class="fas fa-heart"></i>
+                            <span>Benefits Administration</span>
+                        </div>
+                        <div class="nav-item" data-operation="payroll">
+                            <i class="fas fa-money-check-alt"></i>
+                            <span>Payroll Management</span>
+                        </div>
+                        <div class="nav-item" data-operation="leave">
+                            <i class="fas fa-calendar-times"></i>
+                            <span>Leave Management</span>
+                        </div>
+                        <div class="nav-item" data-operation="attendance">
+                            <i class="fas fa-clock"></i>
+                            <span>Attendance Management</span>
+                        </div>
+                        <div class="nav-item" data-operation="performance">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Performance Management</span>
+                        </div>
+                        <div class="nav-item" data-operation="training">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Training & Development</span>
+                        </div>
+                        <div class="nav-item" data-operation="self-service">
+                            <i class="fas fa-user-cog"></i>
+                            <span>Employee Self-Service</span>
+                        </div>
+                        <div class="nav-item" data-operation="compliance">
+                            <i class="fas fa-gavel"></i>
+                            <span>Compliance Management</span>
+                        </div>
+                    </nav>
+                </div>
+            </aside>
+
+            <!-- Main Content -->
+            <main class="main-content">
+                <div id="content-area" class="content-area">
+                    <!-- Dynamic content will be loaded here -->
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
